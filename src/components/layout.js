@@ -10,17 +10,19 @@ import {
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div className={container}>
       <title>{pageTitle}</title>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}></Link>
-            Home
+            <Link to="/" className={navLinkText}>
+              Home
+            </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}></Link>
-            About
+            <Link to="/about" className={navLinkText}>
+              About
+            </Link>
           </li>
         </ul>
       </nav>
